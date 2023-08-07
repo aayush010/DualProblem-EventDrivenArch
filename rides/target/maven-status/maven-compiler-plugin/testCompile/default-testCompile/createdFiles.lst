@@ -1,0 +1,4 @@
+io\roach\movrapi\util\CommonTest.class
+io\roach\movrapi\service\RideServiceImplTest.class
+io\roach\movrapi\controller\RideControllerTest.class
+io\roach\movrapi\util\TestHelpers.class

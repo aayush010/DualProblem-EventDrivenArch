@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: io.roach.movrapi.controller.RideControllerTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.377 s <<< FAILURE! - in io.roach.movrapi.controller.RideControllerTest
+startRide_shouldStartTheRide  Time elapsed: 1.223 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at io.roach.movrapi.controller.RideControllerTest.startRide_shouldStartTheRide(RideControllerTest.java:104)
+
+endRide_shouldEndTheRide_ifItExists  Time elapsed: 0.009 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at io.roach.movrapi.controller.RideControllerTest.endRide_shouldEndTheRide_ifItExists(RideControllerTest.java:210)
+

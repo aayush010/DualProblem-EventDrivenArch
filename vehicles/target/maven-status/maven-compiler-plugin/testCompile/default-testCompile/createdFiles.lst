@@ -1,0 +1,7 @@
+io\roach\movrapi\util\CommonTest$DeserializationTestClass.class
+io\roach\movrapi\entity\VehicleTest.class
+io\roach\movrapi\util\TestHelpers.class
+io\roach\movrapi\controller\VehicleControllerTest.class
+io\roach\movrapi\dto\VehicleIdDTOTest.class
+io\roach\movrapi\util\CommonTest.class
+io\roach\movrapi\service\VehicleServiceImplTest.class

@@ -1,0 +1,12 @@
+io\roach\movrapi\config\ServiceConfigTest.class
+io\roach\movrapi\controller\UserControllerTest.class
+io\roach\movrapi\clients\UserClientTest.class
+io\roach\movrapi\util\TestHelpers.class
+io\roach\movrapi\clients\VehicleClientTest.class
+io\roach\movrapi\controller\VehicleControllerTest.class
+io\roach\movrapi\util\CommonTest.class
+io\roach\movrapi\config\ServiceConfigTest$1.class
+io\roach\movrapi\clients\AuthClientTest.class
+io\roach\movrapi\clients\RidesClientTest.class
+io\roach\movrapi\controller\AccessControllerTest.class
+io\roach\movrapi\controller\RideControllerTest.class
