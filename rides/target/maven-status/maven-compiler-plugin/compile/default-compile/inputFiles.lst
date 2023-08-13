@@ -1,8 +1,12 @@
 D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\util\Constants.java
 D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\dto\MessagesDTO.java
 D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\MovrApiApplication.java
+D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\events\EventRepository.java
 D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\service\RideService.java
 D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\util\Common.java
+D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\events\EventPublisher.java
+D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\events\RideStarted.java
+D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\events\EventEnvelope.java
 D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\controller\RideController.java
 D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\dao\RideRepository.java
 D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\entity\Ride.java
@@ -14,5 +18,6 @@ D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercise
 D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\exception\NotFoundException.java
 D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\dto\RideRequestDTO.java
 D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\dto\RideDTO.java
+D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\events\Event.java
 D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\exception\InvalidValueException.java
 D:\Course\Event Driven Architecture\event_driven_movr\event_driven_movr\exercises\movr\rides\src\main\java\io\roach\movrapi\exception\InvalidVehicleStateException.java

@@ -1,3 +1,4 @@
+io\roach\movrapi\events\EventRepository.class
 io\roach\movrapi\exception\InvalidUUIDException.class
 io\roach\movrapi\controller\RideController.class
 io\roach\movrapi\entity\Ride.class
@@ -5,6 +6,8 @@ io\roach\movrapi\dto\RideResponseDTO.class
 io\roach\movrapi\util\Constants.class
 io\roach\movrapi\dao\RideRepository.class
 io\roach\movrapi\dto\MessagesDTO.class
+io\roach\movrapi\events\EventPublisher.class
+io\roach\movrapi\events\RideStarted.class
 io\roach\movrapi\controller\ControllerExceptionHandler.class
 io\roach\movrapi\exception\InvalidVehicleStateException.class
 io\roach\movrapi\service\RideService.class
@@ -12,7 +15,9 @@ io\roach\movrapi\dto\RideRequestDTO.class
 io\roach\movrapi\MovrApiApplication.class
 io\roach\movrapi\dto\RideDTO.class
 io\roach\movrapi\util\Common.class
+io\roach\movrapi\events\EventEnvelope.class
 io\roach\movrapi\service\RideServiceImpl.class
+io\roach\movrapi\events\Event.class
 io\roach\movrapi\exception\NotFoundException.class
 io\roach\movrapi\exception\InvalidValueException.class
 io\roach\movrapi\dto\EndRideRequestDTO.class

@@ -4,9 +4,7 @@ import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Map;
 import java.util.UUID;
@@ -15,27 +13,30 @@ import java.util.UUID;
 @Table(name = "events")
 @TypeDef(name = "jsonb", typeClass = JsonBinaryType.class)
 public class EventEnvelope {
-    private UUID uuid;
-    private Timestamp timestamp;
+    @Id
+    @GeneratedValue
+    private UUID id;
+    private Timestamp ts;
+    @Column(name = "event_type")
     private String event_type;
     @Column(name = "event_data")
     @Type(type = "jsonb")
     private Map<String,Object> event_data;
 
-    public UUID getUuid() {
-        return uuid;
+    public UUID getId() {
+        return id;
     }
 
-    public void setUuid(UUID uuid) {
-        this.uuid = uuid;
+    public void setId(UUID id) {
+        this.id = id;
     }
 
-    public Timestamp getTimestamp() {
-        return timestamp;
+    public Timestamp getTs() {
+        return ts;
     }
 
-    public void setTimestamp(Timestamp timestamp) {
-        this.timestamp = timestamp;
+    public void setTs(Timestamp ts) {
+        this.ts = ts;
     }
 
     public String getEvent_type() {

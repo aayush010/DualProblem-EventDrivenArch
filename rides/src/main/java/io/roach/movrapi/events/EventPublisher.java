@@ -11,7 +11,7 @@ import java.util.Map;
 public class EventPublisher {
     EventRepository eventRepository;
     ObjectMapper objectMapper;
-
+    @Autowired
     EventPublisher(EventRepository eventRepository, ObjectMapper objectMapper){
         this.eventRepository = eventRepository;
         this.objectMapper = objectMapper;

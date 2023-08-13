@@ -7,3 +7,10 @@ CREATE TABLE movr_rides.rides (
 	start_ts TIMESTAMP NOT NULL,
 	end_ts TIMESTAMP DEFAULT NULL
 );
+
+CREATE TABLE movr_rides.events(
+	id UUID,
+	ts TIMESTAMP,
+	event_type STRING,
+	event_data STRING
+);

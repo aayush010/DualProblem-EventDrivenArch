@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: io.roach.movrapi.service.RideServiceImplTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 s - in io.roach.movrapi.service.RideServiceImplTest
+Tests run: 10, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.177 s <<< FAILURE! - in io.roach.movrapi.service.RideServiceImplTest
+startRide_shouldCreateANewRide  Time elapsed: 0.008 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "io.roach.movrapi.events.EventPublisher.publish(String, io.roach.movrapi.events.Event)" because "this.eventPublisher" is null
+	at io.roach.movrapi.service.RideServiceImplTest.startRide_shouldCreateANewRide(RideServiceImplTest.java:135)
+

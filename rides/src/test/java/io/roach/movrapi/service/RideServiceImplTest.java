@@ -34,7 +34,7 @@ public class RideServiceImplTest {
     @BeforeEach
     public void init() {
         MockitoAnnotations.openMocks(this);
-        rideService = new RideServiceImpl(rideRepository);
+        rideService = new RideServiceImpl(rideRepository, null);
     }
 
     @Test

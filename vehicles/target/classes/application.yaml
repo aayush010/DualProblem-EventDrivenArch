@@ -13,7 +13,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:26257/movr_vehicles
     username: demo
-    password: demo18852
+    password: demo12780
 
   jpa:
     show-sql: false
