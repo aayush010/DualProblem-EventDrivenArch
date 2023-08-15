@@ -89,7 +89,7 @@ public class VehicleServiceImpl implements VehicleService {
      * @return              a list of vehicle entity objects
      */
     @Override
-    @Transactional(isolation = Isolation.SERIALIZABLE, readOnly = true)
+    @Transactional(isolation = Isolation.READ_COMMITTED, readOnly = true)
     public List<VehicleWithLocation> getVehiclesWithLocation(Integer maxRecords) {
         int max = maxRecords == null ? MAX_VEHICLES_TO_RETURN : maxRecords;
         return vehicleWithLocationRepository.getVehiclesWithLocation(max);
@@ -103,7 +103,7 @@ public class VehicleServiceImpl implements VehicleService {
      * @throws NotFoundException    if the vehicle id does not exist in the database
      */
     @Override
-    @Transactional(isolation = Isolation.SERIALIZABLE, readOnly = true)
+    @Transactional(isolation = Isolation.READ_COMMITTED, readOnly = true)
     public Vehicle  getVehicle(UUID vehicleId) throws NotFoundException {
         Optional<Vehicle> vehicleOptional = vehicleRepository.findById(vehicleId);
         if (!vehicleOptional.isPresent()) {

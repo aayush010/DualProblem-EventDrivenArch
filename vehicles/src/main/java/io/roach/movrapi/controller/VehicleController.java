@@ -5,6 +5,8 @@ import java.util.List;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.roach.movrapi.dto.*;
+import io.roach.movrapi.events.KafkaMessage;
+import io.roach.movrapi.events.RideStarted;
 import io.roach.movrapi.exception.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -123,6 +125,17 @@ public class VehicleController {
 
         String response = String.format(MSG_DELETED_VEHICLE, vehicleId);
         return ResponseEntity.ok(new MessagesDTO(response));
+    }
+
+    @KafkaListener(topics = "movr_rides.public.events")
+    public void listen(KafkaMessage kafkaMessage) throws DeserializationException, NotFoundException {
+        if(kafkaMessage.getEventEnvelope().getEvent_type().equals("ride_started")){
+            logger.info("Ride Started Event received");
+            RideStarted rideStarted = deserialize(mapper, kafkaMessage.getEventEnvelope().getEvent_data(), RideStarted.class);
+            vehicleService.checkoutVehicle(rideStarted.getVehicleid(), rideStarted.getStartTime());
+        }else{
+            logger.info(kafkaMessage.getEventEnvelope() + " Unknown Event From Kafka received : " + kafkaMessage.getEventEnvelope().getEvent_type());
+        }
     }
 }
 
